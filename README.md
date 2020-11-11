@@ -1,8 +1,8 @@
 # --Japanese-house-price-prediction  
 
-准备：首先在TRAIN.py文件的307行 添加 文件地址，给path变量。  
+准备：首先在TRAIN.py文件的309行 添加 文件地址，给path变量。  
 如：path = "/Users/muhaoguo/Documents/study/神州数码/日本房价/archive/trade_prices/02.csv"  
-把地址替换成实际某个.csv 文件的地址。  
+把地址替换成某个.csv 文件的实际地址。  
 
 
 运行： 直接运行main函数。 第一次使用需要运行2遍main.py  

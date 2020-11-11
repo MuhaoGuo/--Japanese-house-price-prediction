@@ -306,7 +306,7 @@ def TRAIN(model_name):
         os.mkdir(outdir)
 
     # 预处理
-    path = "/Users/muhaoguo/Documents/study/神州数码/日本房价/archive/trade_prices/02.csv"
+    path = "./archive/trade_prices/02.csv"
     dc = DATA_PREPROCESS(path)  # dc:  data of this city
     dc.read_data()
     dc.analysis_price()
@@ -344,7 +344,7 @@ def TRAIN(model_name):
     print("Random Forest algorithm is training ...")
 
     # predict_random_forest(dc)                              #random forest with PCA
-    Random_Forest.Randomforest_Algorithm(dc.X_train_PCA, dc.Y_train, dc.X_test_PCA, dc.Y_test, model_name)
+    Random_Forest.Randomforest_Algorithm(dc.X_train, dc.Y_train, dc.X_test, dc.Y_test, model_name)
 
     print("Random Forest algorithm training has finished")
     print("NOW, RUN THE TRAIN.py AGAIN")
