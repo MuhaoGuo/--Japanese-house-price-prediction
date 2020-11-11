@@ -21,7 +21,7 @@ import pickle
 
 ''' ========   WE HAVE SAVE THE MODEL INTO A .asv FILE! =======  '''
 def TEST(model_name):
-    X_test_PCA = pd.read_csv('./data/X_test_PCA.csv', low_memory=False, index_col=0).values  #转化为array，要index_col=0
+    # X_test_PCA = pd.read_csv('./data/X_test_PCA.csv', low_memory=False, index_col=0).values  #转化为array，要index_col=0
     Y_test = pd.read_csv('./data/Y_test.csv', low_memory=False, index_col=0).values.ravel()
     X_test = pd.read_csv('./data/X_test.csv', low_memory=False, index_col=0).values
 
